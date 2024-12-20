@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Light gray-blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the content is centered vertically */
+  }
+  
+  .product-list {
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap; /* Wrap rows if there are many products */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .product-card {
+    width: 250px; /* Fixed width for consistent layout */
+    background-color: #352b2b; /* White background for contrast */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #007bff; /* Border to highlight the image */
+  }
+  
+  .product-details h3 {
+    color: #333333; /* Darker text for readability */
+    margin-bottom: 10px;
+  }
+  
+  .product-details p {
+    color: #555555; /* Slightly muted gray for subtext */
+    font-size: 14px;
+  }
+  
+  button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px; /* Rounded button corners */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Pressed effect */
+  }
+  
+  button:focus {
+    outline: 2px solid #0056b3; /* Focus outline for accessibility */
+  }
+  
+  .shoping_Cart button{
+    
+    margin: 5px;
+  }
+
+  .shoping_cart{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
